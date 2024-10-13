@@ -1,0 +1,8 @@
+Flask
+torch
+transformers
+spacy
+pdfplumber  
+PyMuPDF  
+lru_cache
+numpy
