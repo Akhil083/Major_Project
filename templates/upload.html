@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Document - Legal Document Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Link to your CSS file for styling -->
+    <script src="{{ url_for('static', filename='scripts.js') }}" defer></script> <!-- Link to JavaScript file -->
+</head>
+<body>
+    <header>
+        <h1>Upload Document</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="analyze.html">Analyze Document</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Upload Your Legal Document</h2>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="fileInput">Select a document:</label>
+            <input type="file" id="fileInput" name="file" accept=".pdf, .docx, .txt" required>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="progress" style="display: none;">
+            <p>Uploading... <span id="progressPercentage">0%</span></p>
+        </div>
+        <div id="message"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Legal Document Analyzer. All rights reserved.</p>
+    </footer>
+</body>
+</html>

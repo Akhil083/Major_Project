@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #35424a;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+#progress-container {
+    margin-top: 20px;
+}
+
+#upload-message.success {
+    color: green;
+}
+
+#upload-message.error {
+    color: red;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+}
